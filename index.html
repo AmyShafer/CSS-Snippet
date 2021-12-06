@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mini Project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="/Users/amyshafer/Bootcamp/02-Advanced-CSS/01-Activities/28-Stu_Mini-Project/assets/reset.css" />
+  <link rel="stylesheet" type="text/css" href="/Users/amyshafer/Bootcamp/02-Advanced-CSS/01-Activities/28-Stu_Mini-Project/assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Francois+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>CSS Snippet Cheat Sheet</h1>
+    <h3>A collection of CSS treasures for the young and old!</h3>
+  </header>
+
+  <!-- Body -->
+  <main>
+    <!-- Box 1  -->
+    <section class="card">
+        <h2 class=card-header>FLEXBOX ROW</h2>
+        <p>Use these three properties to create a Flexbox Row layout.</p>
+        <figure role="img" aria-labelledby="code-sample">
+          <pre class="inside-box"><code>
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+          </code></pre>
+        </figure>
+    </section>
+
+     <!-- Box 2  -->
+    <section class="card">
+        <h2 class=card-header>FLEXBOX COLUMN</h2>
+        <p>Use this to create a Flexbox Column layout.</p>
+        <figure role="img" aria-labelledby="code-sample">
+          <pre class="inside-box"><code>
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+          </code></pre>
+        </figure>
+    </section>
+
+     <!-- Box 3  -->
+    <section class="card">
+        <h2 class=card-header>CSS GRID LAYOUT</h2>
+        <p>Build a 12-column layout using CSS grid.</p>
+        <figure role="img" aria-labelledby="code-sample">
+          <pre class="inside-box"><code>
+  .grid {        
+    display: grid; 
+    width: 100%;
+    grid-template-columns:
+      repeat(12, 1fr);
+  }
+          </code></pre>
+        </figure>
+    </section>
+
+     <!-- Box 4  -->
+    <section class="card">
+        <h2 class=card-header>LINEAR GRADIENTS</h2>
+        <p>This will create a linear gradient background from top to bottom.</p>
+        <figure role="img" aria-labelledby="code-sample">
+          <pre class="inside-box"><code>
+  .linear-gradient-background {
+    background-image:
+      linear-gradient(
+        rgba(232, 102, 236, 0.03)
+          0,
+        rgba(232, 102, 236, 0.06)
+          100%
+    );
+  }
+          </code></pre>  
+        </figure>
+    </section>
+
+     <!-- Box 5  -->
+    <section class="card">
+        <h2 class=card-header>BOX TRANSITION GLOW</h2>
+        <p>Use transitions and box shadow to glow on hover.</p>
+        <figure role="img" aria-labelledby="code-sample">
+          <pre class="inside-box"><code>
+  .code-card .card-header {
+    border-radius: 8px;
+    transition: ;all 0.5s ease-in-out;
+  }          
+          
+  .code-card:hover, .code-card:hover
+    .card-header {
+      box-shadow:
+        inset 0 0 8px 
+        rgba(232, 102,
+          236, 1) , 0 0 15px
+        rgba(232, 102,
+          236, 1);
+  }
+          </code></pre>
+      </figure>
+    </section>
+
+     <!-- Box 6  -->
+    <section class="card">
+        <h2 class=card-header>OVERLAY CARD WITH TITLE</h2>
+        <p>Use position properties and negative margins to raise elements higher than their natural starting.</p>
+        <figure role="img" aria-labelledby="sample-code">
+          <pre class="inside-box"><code>
+  .card-header {
+    position: relative;
+    margin-top: -20px;
+  }
+          </code></pre>  
+    </section>
+    
+  </main>
+  <footer>
+    <h3>Made with Chutzpah!</h3>
+  </footer>
+</body>
+</html>

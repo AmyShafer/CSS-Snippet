@@ -1,0 +1,149 @@
+
+* {
+    margin: 10px;
+    padding: 5px;
+}
+
+:root {
+    --main-background-color: #B18AA4;
+    --second-color: pink;
+    --glow: #E3CD52;
+  }
+  
+body {
+    font-size: 16px;
+    background-color: var(--main-background-color);
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  background: var(--main-background-color);
+  color: black;
+}
+  
+h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+  
+h2 {
+    font-family: 'Francois One', sans-serif; 
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+p {
+  display: flex;
+  font-family: 'Francois One', sans-serif; 
+  font-size: 1.2em;
+  font-weight: 200;
+  justify-content: left;
+}
+
+.card-header {
+  border: 6px solid black;
+}
+  
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 370px;
+    width: 370px;
+    padding: 15px;
+    margin: 30px;
+    justify-content: center;
+    flex: 0 0 300px;
+    border: 3px dashed black;
+    box-shadow: 10px 10px 5px var(--second-color);
+}
+  
+.inside-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: ;
+  height: 200px;
+  width: 275px;  
+  background-image: linear-gradient(pink, #B30077);
+  font-family: monospace;
+  font-size: 1.9vmin;
+  color: black;
+}
+
+.card .card-header {
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover,
+.card:hover .card-header {
+  box-shadow: inset 0 0 8px
+  rgba(150, 24, 108, 59), 0 0 15px
+  rgba(150, 24, 108, 59);
+}
+
+.inside-box .card-header {
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.inside-box:hover,
+.inside-box:hover  {
+  box-shadow: inset 0 0 8px
+  rgba(227, 205, 82, 89), 0 0 15px
+  rgba(227, 205, 82, 89);
+}
+
+.card-header {
+  position: relative;
+  margin-top: -20px;
+}
+  
+  .card > header {
+    border-radius: var(--border-radius);
+    padding: 20px;
+  }
+  
+  .card > p {
+    text-align: left;
+  }
+  
+  .card > img {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(pink,  #B30077);
+    color: black;
+    margin-top: auto;
+  }
+  
